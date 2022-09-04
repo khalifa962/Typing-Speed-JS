@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #a7df99;
+    /* background-color: #25b102; */
+    /* overflow: hidden; */
+}
+.game{
+    min-height: 100vh;
+}
+.name{
+    width: 100%;
+    font-size: 30px;
+    line-height: 80px;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 12px  #9e1919;
+    font-weight: bold;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #072300;
+}
+.container{
+    overflow: hidden;
+    width: 80%;
+    margin:20px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 14px 1px #222;
+}
+.container .message span{
+    color: rgb(12, 6, 6);
+    font-weight: bolder;
+    font-size: 28px;
+    text-shadow: 1px 1px 5px #3b7c29 ;
+}
+
+.container .message{
+    width: 80%;
+    margin: 30px 10px;
+    font-size: 20px;
+    color: #072300;
+    font-weight: bold;
+}
+.container .start{
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #92d880;
+    color: #0e4600;
+    transition: .3s;
+    opacity: .9;
+    box-shadow:inset 1px 1px 14px 1px rgb(219, 8, 8);
+}
+.container .start:hover{
+    opacity: 1;
+    letter-spacing: 1px;
+}
+.container .the-word{
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow:3px 3px 1px rgb(42, 214, 71);
+    user-select: none;
+    min-height: 100px;
+}
+.container .input{
+    width: 60%;
+    padding: 10px;
+    min-height: 100px;
+    outline: 0;
+    border: 3px solid #d64907;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: block;
+    text-transform: capitalize;
+}
+.container .upcoming-words{
+    min-height: 100px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    user-select: none;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid #d64907;
+    padding: 20px;
+    margin: 30px auto;
+}
+.upcoming-words div{
+    background-color: #173304;
+    color: wheat;
+    margin: 5px;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    height: max-content;
+}
+.control{
+display: flex;
+justify-content: space-around;
+background-color: #9e1919;
+color: #a7df99;
+padding: 10px;
+width: 100%;
+font-size: 25px;
+}
+.control span{
+font-weight: bold;    
+}
+.finish{
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding: 10px;
+}
+.finish .good{
+    color: #d64907;
+}
+.finish .bad{
+    color: #072300;
+}
+.heading{
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    justify-content: center;
+}
+.heading .menu{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin:6px -75px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #3b7c29;
+}
+.heading i {
+    font-size: 25px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.heading .menu p:hover{
+color: #92d880;
+    background-color: #222;
+}
+.heading .menu p{
+    cursor: pointer;
+    padding: 10px;
+transition: .5s;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+.show{
+    display: block !important;
+}
